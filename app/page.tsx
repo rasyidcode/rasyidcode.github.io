@@ -22,15 +22,15 @@ export default function Page() {
           </button>
           <button className="p-2 rounded-full cursor-pointer active:bg-slate-300/60
           transition-all duration-150 ease-in-out">
-            <MagnifyingGlassIcon className="size-6 text-slate-800" />
+            <MagnifyingGlassIcon className="size-6 text-gray-700" />
           </button>
           <Popover className="relative">
             <PopoverButton className="p-2 rounded-full cursor-pointer active:bg-slate-300/60
           transition-all duration-150 ease-in-out ring-0 outline-0 focus:bg-slate-300/60">
-              <EllipsisVerticalIcon className="size-6 text-slate-800" />
+              <EllipsisVerticalIcon className="size-6 text-gray-700" />
             </PopoverButton>
             <PopoverPanel as="ul" anchor="bottom start" className="bg-white py-4 shadow rounded-sm
-            w-52 flex flex-col gap-2 mr-2 ">
+            w-52 flex flex-col gap-2 mr-2 z-50">
               <li className="hover:bg-gray-100 px-4 py-2 cursor-pointer">Contact Info</li>
               <li className="hover:bg-gray-100 px-4 py-2 cursor-pointer">Select messages</li>
               <li className="hover:bg-gray-100 px-4 py-2 cursor-pointer">Mute notifications</li>
@@ -88,19 +88,22 @@ export default function Page() {
           </div>
         </div>
       </div>
-      <div className="flex items-center p-4 gap-4 bg-[#F0F2F5] 
+      <div className="flex items-center px-4 py-2 gap-4 bg-[#F0F2F5] 
       shadow-[0_-1px_3px_0_rgba(0,0,0,0.1),0_-1px_2px_0_rgba(0,0,0,0.06)]">
-        <button>
+        <button className="cursor-pointer p-2 rounded-full active:bg-slate-300/60
+          transition-all duration-150 ease-in-out">
           <PlusIcon className="size-6 text-gray-700" />
         </button>
-        <div className="flex-1 flex items-center gap-3 bg-white p-3
+        <div className="flex-1 flex items-center gap-3 bg-white px-4 py-2
         rounded-lg">
-          <button>
+          <button className="cursor-pointer p-2 rounded-full active:bg-slate-300/60
+          transition-all duration-150 ease-in-out">
             <PhotoIcon className="size-6 text-gray-700" />
           </button>
           <input placeholder="Type a message" className="outline-none flex-1" />
         </div>
-        <button>
+        <button className="cursor-pointer p-2 rounded-full active:bg-slate-300/60
+          transition-all duration-150 ease-in-out">
           <MicrophoneIcon className="size-6 text-gray-700" />
         </button>
       </div>
