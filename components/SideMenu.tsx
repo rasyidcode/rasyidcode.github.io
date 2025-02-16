@@ -1,8 +1,9 @@
 import { ChatBubbleOvalLeftEllipsisIcon, Cog6ToothIcon, RssIcon, StopCircleIcon, UserGroupIcon } from "@heroicons/react/24/outline";
 import { ChatBubbleLeftIcon } from "@heroicons/react/24/solid";
-import DefaultUserImage from "@/components/DefaultUserImage";
+import profilePic from "./../assets/me.jpg";
+import Image from "next/image";
 
-export default function Menu() {
+export default function SideMenu() {
     return (
         <div className="bg-[#F0F2F5] w-15 flex flex-col justify-between py-2">
             <div className="flex flex-col gap-4 items-center">
@@ -69,7 +70,12 @@ export default function Menu() {
                     </div>
                 </a>
                 <a href="#" className="p-2 relative group flex items-center">
-                    <DefaultUserImage size={32} />
+                    <Image
+                        src={profilePic}
+                        alt="Ahmad Jamil Al Rasyid"
+                        width={30}
+                        height={30}
+                        className="rounded-full aspect-square object-cover border" />
                     <div className="absolute left-7/6 bg-gray-800 text-white
                     text-sm rounded-full px-2 py-1 whitespace-nowrap transform scale-75
                     opacity-0 transition-all duration-300 group-hover:scale-100

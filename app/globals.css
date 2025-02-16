@@ -29,7 +29,7 @@
 @layer utilities {
   .scrollbar {
     scrollbar-width: thin;
-    scrollbar-color: rgba(10, 20, 26, .2) transparent;
+    scrollbar-color: rgba(10, 20, 26, .3) transparent;
   }
 
   /* .scrollbar::-webkit-scrollbar {

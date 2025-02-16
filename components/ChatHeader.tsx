@@ -1,19 +1,20 @@
 import Image from "next/image"
 import { MagnifyingGlassIcon, VideoCameraIcon, EllipsisVerticalIcon } from "@heroicons/react/24/solid"
 import { Popover, PopoverButton, PopoverPanel } from "@headlessui/react"
+import profilePic from "./../assets/me.jpg";
 
 export default function ChatHeader() {
     return (
-        <header className="flex items-center p-4 gap-4 bg-[#F0F2F5] shadow">
+        <header className="flex z-50 items-center p-4 gap-4 bg-[#F0F2F5] shadow">
             <button className="cursor-pointer">
                 <Image
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1MWm4Uc-yhWB5bkRg8r_Vy6ueABFtDb_qSA&s"
-                    alt="Donald Trump"
+                    src={profilePic}
+                    alt="Ahmad Jamil Al Rasyid"
                     width={40}
                     height={40}
                     className=" rounded-full aspect-square object-cover" />
             </button>
-            <h1 className="flex-1">Donald Trump</h1>
+            <h1 className="flex-1">Ahmad Jamil Al Rasyid</h1>
             <div className="flex items-center gap-8">
                 <button className="p-2 rounded-full cursor-pointer active:bg-slate-300/60
           transition-all duration-150 ease-in-out">

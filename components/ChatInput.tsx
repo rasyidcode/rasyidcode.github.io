@@ -3,7 +3,7 @@ import { PlusIcon, PhotoIcon, MicrophoneIcon } from '@heroicons/react/24/solid'
 
 export default function ChatInput() {
     return (
-        <div className="flex items-center px-4 py-2 gap-4 bg-[#F0F2F5] 
+        <div className="flex items-center px-4 py-2 gap-4 bg-[#F0F2F5] z-50
       shadow-[0_-1px_3px_0_rgba(0,0,0,0.1),0_-1px_2px_0_rgba(0,0,0,0.06)]">
             <button className="cursor-pointer p-2 rounded-full active:bg-slate-300/60
           transition-all duration-150 ease-in-out">

@@ -5,7 +5,7 @@ import ChatInput from "@/components/ChatInput";
 import ChatList from "@/components/ChatList";
 import ChatPanel from "@/components/ChatPanel";
 import ChatSearch from "@/components/ChatSearch";
-import Menu from "@/components/Menu";
+import SideMenu from "@/components/SideMenu";
 
 
 export default function Page() {
@@ -16,7 +16,7 @@ export default function Page() {
       </div>
       <div className='flex-1 flex overflow-hidden p-5 z-50'>
         <div className="flex-1 flex overflow-hidden shadow-xl">
-          <Menu />
+          <SideMenu />
           <div className="bg-white w-md border flex flex-col">
             <AppHeader />
             <ChatSearch />
@@ -25,6 +25,8 @@ export default function Page() {
             <div>Get WhyApp for Windows</div>
           </div>
           <div className="flex-1 flex flex-col overflow-hidden relative">
+            <div className="w-full h-full absolute bg-[url(./wa-bg.png)] bg-fixed bg-contain
+            bg-[#EFEAE2] bg-repeat z-0"></div>
             <ChatHeader />
             <ChatPanel />
             <ChatInput />
