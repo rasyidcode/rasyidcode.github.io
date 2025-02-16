@@ -16,11 +16,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} flex flex-col h-screen overflow-hidden`}>
-        <div className='absolute w-full h-full z-0 bg-[#DAD7D3]'>
-          <div className='h-30 bg-[#00A783]'></div>
-        </div>
-        <main className='flex-1 flex overflow-hidden p-5 z-50'>
+      <body className={`${inter.className}`}>
+        <main>
           {children}
         </main>
       </body>
