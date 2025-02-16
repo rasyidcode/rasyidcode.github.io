@@ -86,7 +86,7 @@ export default function TryTooltipPage() {
             </div>
             <div className="relative group inline-block">
                 <button className="px-4 py-2 bg-blue-600 text-white rounded-md">
-                    Doesn't work
+                    Doesnt work
                 </button>
                 <div className="absolute left-1/2 -translate-x-1/2 bottom-full mb-2 
               bg-gray-800 text-white text-sm rounded-md px-2 py-1 whitespace-nowrap 
@@ -95,8 +95,6 @@ export default function TryTooltipPage() {
                     Tooltip text
                 </div>
             </div>
-
         </div>
-
     )
 }
