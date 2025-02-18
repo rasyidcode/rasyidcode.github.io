@@ -11,9 +11,8 @@ export default function SideMenu() {
                 group flex items-center">
                     <ChatBubbleLeftIcon className="size-6 text-slate-700" />
                     <div className="absolute left-7/6 bg-gray-800 text-white
-                    text-sm rounded-full px-2 py-1 whitespace-nowrap transform scale-75
-                    opacity-0 transition-all duration-300 group-hover:scale-100
-                    group-hover:opacity-100">
+                    text-sm rounded-full px-2 py-1 whitespace-nowrap transform scale-0
+                    transition-all duration-300 group-hover:scale-100 z-50">
                         Chats
                     </div>
                 </a>
@@ -21,9 +20,8 @@ export default function SideMenu() {
                 group flex items-center">
                     <RssIcon className="size-6 text-slate-700" />
                     <div className="absolute left-7/6 bg-gray-800 text-white
-                    text-sm rounded-full px-2 py-1 whitespace-nowrap transform scale-75
-                    opacity-0 transition-all duration-300 group-hover:scale-100
-                    group-hover:opacity-100">
+                    text-sm rounded-full px-2 py-1 whitespace-nowrap transform scale-0
+                    transition-all duration-300 group-hover:scale-100 z-50">
                         Status
                     </div>
                 </a>
@@ -31,9 +29,8 @@ export default function SideMenu() {
                 group flex items-center">
                     <ChatBubbleOvalLeftEllipsisIcon className="size-6 text-slate-700" />
                     <div className="absolute left-7/6 bg-gray-800 text-white
-                    text-sm rounded-full px-2 py-1 whitespace-nowrap transform scale-75
-                    opacity-0 transition-all duration-300 group-hover:scale-100
-                    group-hover:opacity-100">
+                    text-sm rounded-full px-2 py-1 whitespace-nowrap transform scale-0
+                    transition-all duration-300 group-hover:scale-100 z-50">
                         Channels
                     </div>
                 </a>
@@ -41,9 +38,8 @@ export default function SideMenu() {
                 group flex items-center">
                     <UserGroupIcon className="size-6 text-slate-700" />
                     <div className="absolute left-7/6 bg-gray-800 text-white
-                    text-sm rounded-full px-2 py-1 whitespace-nowrap transform scale-75
-                    opacity-0 transition-all duration-300 group-hover:scale-100
-                    group-hover:opacity-100">
+                    text-sm rounded-full px-2 py-1 whitespace-nowrap transform scale-0
+                    transition-all duration-300 group-hover:scale-100 z-50">
                         Communities
                     </div>
                 </a>
@@ -51,9 +47,8 @@ export default function SideMenu() {
                 group flex items-center">
                     <StopCircleIcon className="size-6 text-sky-500" />
                     <div className="absolute left-7/6 bg-gray-800 text-white
-                    text-sm rounded-full px-2 py-1 whitespace-nowrap transform scale-75
-                    opacity-0 transition-all duration-300 group-hover:scale-100
-                    group-hover:opacity-100">
+                    text-sm rounded-full px-2 py-1 whitespace-nowrap transform scale-0
+                    transition-all duration-300 group-hover:scale-100 z-50">
                         Mata AI
                     </div>
                 </a>
@@ -63,9 +58,8 @@ export default function SideMenu() {
                 group flex items-center">
                     <Cog6ToothIcon className="size-6 text-slate-700" />
                     <div className="absolute left-7/6 bg-gray-800 text-white
-                    text-sm rounded-full px-2 py-1 whitespace-nowrap transform scale-75
-                    opacity-0 transition-all duration-300 group-hover:scale-100
-                    group-hover:opacity-100">
+                    text-sm rounded-full px-2 py-1 whitespace-nowrap transform scale-0
+                    transition-all duration-300 group-hover:scale-100 z-50">
                         Settings
                     </div>
                 </a>
@@ -77,9 +71,8 @@ export default function SideMenu() {
                         height={30}
                         className="rounded-full aspect-square object-cover border" />
                     <div className="absolute left-7/6 bg-gray-800 text-white
-                    text-sm rounded-full px-2 py-1 whitespace-nowrap transform scale-75
-                    opacity-0 transition-all duration-300 group-hover:scale-100
-                    group-hover:opacity-100">
+                    text-sm rounded-full px-2 py-1 whitespace-nowrap transform scale-0
+                    transition-all duration-300 group-hover:scale-100 z-50">
                         Profile
                     </div>
                 </a>

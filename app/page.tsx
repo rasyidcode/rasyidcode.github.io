@@ -6,6 +6,7 @@ import ChatList from "@/components/ChatList";
 import ChatPanel from "@/components/ChatPanel";
 import ChatSearch from "@/components/ChatSearch";
 import SideMenu from "@/components/SideMenu";
+import { PhoneIcon } from "@heroicons/react/24/outline";
 
 
 export default function Page() {
@@ -17,12 +18,18 @@ export default function Page() {
       <div className='flex-1 flex overflow-hidden p-5 z-50'>
         <div className="flex-1 flex overflow-hidden shadow-xl">
           <SideMenu />
-          <div className="bg-white w-md border flex flex-col">
+          <div className="bg-white w-md border flex flex-col relative">
             <AppHeader />
             <ChatSearch />
             <ChatCategories />
             <ChatList />
-            <div>Get WhyApp for Windows</div>
+            <a href="#" className="absolute bottom-0 bg-white text-center
+            flex items-center p-2 justify-center gap-4 w-full border-t">
+              <div className="bg-[#25D366] p-1 rounded-sm">
+                <PhoneIcon className="size-7 text-white" />
+              </div>
+              <h1>Get WhyApp for Windows</h1>
+            </a>
           </div>
           <div className="flex-1 flex flex-col overflow-hidden relative">
             <div className="w-full h-full absolute bg-[url(./wa-bg.png)] bg-fixed bg-contain
