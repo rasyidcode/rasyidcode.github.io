@@ -25,27 +25,3 @@
   }
 
 }
-
-@layer utilities {
-  .scrollbar {
-    scrollbar-width: thin;
-    scrollbar-color: rgba(10, 20, 26, .3) transparent;
-  }
-
-  /* .scrollbar::-webkit-scrollbar {
-    width: 12px;
-  }
-
-  .scrollbar::-webkit-scrollbar-track {
-    background: #ffffff;
-  }
-
-  .scrollbar::-webkit-scrollbar-thumb {
-    background: #CED0D1;
-    border: 3px solid #ffffff;
-  } */
-
-  /* .scrollbar::-webkit-scrollbar-thumb:hover {
-    background: #c0a0b9;
-  } */
-}
