@@ -10,7 +10,7 @@ export default function Page() {
             alt="Saitama Ok"
             width={500}
             height={500} />
-          <video autoPlay height="500" width="500">
+          <video autoPlay muted height="500" width="500">
             <source src="/never-gonna-give-up.mp4" type="video/mp4" />
           </video>
         </div>
