@@ -1,6 +1,21 @@
+'use client';
+
 import Image from "next/image";
+import { useEffect, useRef } from "react";
 
 export default function Page() {
+  const videoRef = useRef(null);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      if (videoRef.current) {
+        videoRef.current.muted = false;
+      }
+    }, 250);
+
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <>
       <div className="flex justify-center items-center min-h-screen bg-purple-200">
@@ -10,9 +25,11 @@ export default function Page() {
             alt="Saitama Ok"
             width={500}
             height={500} />
-          <video autoPlay muted height="500" width="500">
-            <source src="/never-gonna-give-up.mp4" type="video/mp4" />
-          </video>
+          <div>
+            <video ref={videoRef} loop autoPlay muted height="500" width="500">
+              <source src="/never-gonna-give-up.mp4" type="video/mp4" />
+            </video>
+          </div>
         </div>
       </div>
     </>
