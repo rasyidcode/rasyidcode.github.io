@@ -1,6 +1,17 @@
+'use client';
+
 import Image from "next/image";
+import { useEffect, useRef } from "react";
 
 export default function Page() {
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  function unmuteVideo() {
+    if (videoRef.current) {
+      videoRef.current.muted = false;
+    }
+  }
+
   return (
     <>
       <div className="flex justify-center items-center min-h-screen bg-purple-200">
@@ -11,7 +22,7 @@ export default function Page() {
             width={500}
             height={500} />
           <div>
-            <video loop autoPlay muted height="500" width="500">
+            <video ref={videoRef} onClick={unmuteVideo} className="cursor-pointer" loop autoPlay muted height="500" width="500">
               <source src="/never-gonna-give-up.mp4" type="video/mp4" />
             </video>
           </div>
